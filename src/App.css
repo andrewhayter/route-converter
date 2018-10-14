@@ -6,21 +6,12 @@
   justify-content: center;
 }
 
-.form {
-  align-items: center;
-}
-
-.results {
-  font-size: calc(8px + 2vmin);
-}
-
 ul {
-  text-align:left;
+  text-align: left;
   list-style: none;
+  font-size: .8em;
 }
 
 .button {
   display: block;
-  align-items: right;
-  justify-content: right;
 }
