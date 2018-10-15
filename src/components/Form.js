@@ -25,7 +25,7 @@ class Form extends React.Component {
     const convertedRoutes = []
     const laravelRouteRegEx = /Route::get\('(.+)',\ function\s\(\)\s\{\n\s+?return\ redirect\('(.+)'(?:.*)\);\n(\s+)}\);/g //eslint-disable-line
     formData.replace(laravelRouteRegEx, (match, oldURL, newURL) => {
-      convertedRoutes.push(`<RedirectWithStatus status={301} from="${oldURL}" to="${newURL}" />`)
+      convertedRoutes.push(`<Redirect from="${oldURL}" to="${newURL}" />`)
     })
     this.setState({convertedRoutes})
   }
